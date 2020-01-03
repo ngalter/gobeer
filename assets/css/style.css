@@ -1,0 +1,99 @@
+#pubs {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    background-color: black;
+}
+.my-map
+{
+  height: 200px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;;
+}
+.container {
+    text-align: center;
+}
+.title-text {
+    font-family: 'Sigmar One', cursive;
+    text-align: center;
+    font-size: 3em;
+}
+.sub-text {
+    text-align: center;
+    font-family: 'Sigmar One', cursive;
+    font-size: 1em;
+    margin-top: .1em;
+}
+.heading {
+    padding-top: 1em;
+    background-color: brown;
+    color: yellow;
+}
+
+.my-search {
+    width: 250px;
+    margin-left: auto;
+    margin-right:  auto;
+    margin-bottom: 1em;
+    text-align: center;
+    margin-top: 0px;
+    border-radius: 5px; 
+}
+
+.my-btn {
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    min-width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: yellow;
+    color: brown;
+    font-family: 'Sigmar One', cursive; 
+}
+.my-btn:hover {
+    border-radius: 5px;
+    text-align: center;
+    background-color: greenyellow ;
+    color: orangered;
+    font-family: 'Sigmar One', cursive; 
+}
+
+.search-form {
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: brown;
+}
+.card {
+    background-color: black;
+    padding: 10px;
+}
+
+.card-heading {
+    font-size: 1.5em;
+    color:yellow;
+    background-color: black;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.bar-address {
+    font-size: 1em;
+    color: white;
+    padding-left: 1em;
+}
+
+.card-heading a:link {
+    color: yellow;
+    background-color: black;
+    text-decoration: underline;
+}
+.card-heading a:hover {
+    color: goldenrod;
+    background-color: black;
+    text-decoration: underline;
+}

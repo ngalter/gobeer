@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Google Beer!</title>
+  <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  <!-- FontAwesome -->
+<link 
+rel="stylesheet"
+href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<style>
+      @import url('https://fonts.googleapis.com/css?family=Sigmar+One&display=swap');
+  </style>
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <div class="row align-center">
+        <div class="large-12 heading container columns">
+               <h1 class="title-text"><i class="fas fa-beer"></i> Go Beer !</h1>
+               <p class="sub-text">Find your local breweries</p>
+        </div>
+   </div>
+   <div class="row align-center">
+        <div class="large-12 heading container search-form columns">
+            <form>
+                  <input type="text" class="my-search" id="city-input" placeholder="Enter Your City">
+                  <button type="submit" class="button my-btn" id="search">Search</button>
+            </form>
+        </div>
+    </div>
+    <div class="row align-center">
+        <div class="large-12 columns container" id="pubs">
+        </div>
+    </div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANuAQZgJ5SljJk_tI26izHWpOwayzGpVg&libraries=places&callback=initMap" async defer></script>
+ 
+   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+<!--    <script src="mapscript.js"></script>-->
+</body>
+</html>
