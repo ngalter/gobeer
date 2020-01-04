@@ -20,7 +20,7 @@ body {
 .title-text {
     font-family: 'Sigmar One', cursive;
     text-align: center;
-    text-shadow: 1px 1px 2px orange;
+    text-shadow: 1px 1px 2px darkorange;
     font-size: 3em;
     padding-top: 10px;
 }
