@@ -75,6 +75,10 @@ body {
     font-family: 'Sigmar One', cursive; 
 }
 
+.my-btn:focus {
+    background-color: orangered;
+  }
+
 .search-form {
     text-align: center;
     margin-top: 0px;
