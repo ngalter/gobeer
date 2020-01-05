@@ -1,19 +1,28 @@
 #pubs {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: black;
+    background-color: transparent;
 }
 .my-map
 {
+  border-top: solid 2px orange;
+  border-right: solid 2px orange;
+  border-left: solid 2px orange;
   height: 200px;
   padding-left: 0px;
   padding-right: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 body {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 960px;
-    background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  background-image: url("../img/beerbg.jpeg"); 
+  color: brown;
+  background-size: cover;
+  background-repeat: repeat;
+  background-color:transparent;
 }
 .container {
     text-align: center;
@@ -21,13 +30,14 @@ body {
 .title-text {
     font-family: 'Sigmar One', cursive;
     text-align: center;
-    text-shadow: 1px 1px 2px darkorange;
+    text-shadow: 3px 2px 5px orangered;
     font-size: 3em;
     padding-top: 10px;
 }
 .sub-text {
     text-align: center;
     font-family: 'Sigmar One', cursive;
+    text-shadow: 2px 2px 5px orangered;
     font-size: 1em;
     margin-top: .1em;
 }
@@ -54,7 +64,7 @@ body {
     border-radius: 5px;
     text-align: center;
     background-color: yellow;
-    color:orange;
+    color:orangered;
     font-family: 'Sigmar One', cursive; 
 }
 .my-btn:hover {
@@ -69,12 +79,11 @@ body {
     text-align: center;
     margin-top: 0px;
     padding-top: 0px;
-    /*background-color: brown;*/
 }
 .card {
     background-color:black;
     padding: 0px;
-    border-bottom: solid 4px gray;
+    border-radius: 5px;
 }
 
 .card-heading {
