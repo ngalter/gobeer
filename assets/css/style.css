@@ -21,7 +21,7 @@ body {
   background-image: url("../img/beerbg.jpeg"); 
   color: brown;
   background-size: cover;
-  background-repeat: repeat;
+  background-attachment: fixed;
   background-color:transparent;
 }
 .container {
@@ -74,12 +74,15 @@ body {
     color: yellow;
     font-family: 'Sigmar One', cursive; 
 }
-
+.checkbox {
+    margin-top: -10px;
+    padding-left: 10px;
+}
 .my-btn:focus {
     background-color: orangered;
   }
 
-.search-form {
+  .search-form {
     text-align: center;
     margin-top: 0px;
     padding-top: 0px;
@@ -88,6 +91,7 @@ body {
     background-color:black;
     padding: 0px;
     border-radius: 5px;
+    margin-bottom: 1%;
 }
 
 .card-heading {

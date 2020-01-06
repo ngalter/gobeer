@@ -15,6 +15,8 @@ $(document).ready(function () {
     var barLon = 0;
     var myLatLng = "";
     var barName = "";
+    var barId = "";
+    var favList = [];
 
     $("#search").on("click", function (event) {
         event.preventDefault();
@@ -61,6 +63,7 @@ $(document).ready(function () {
                     bName = "";
                     nameLink = "";
                     var divCard = $("<div>").attr("id", i.toString()).addClass("card");
+                    barId = response[i].id;
                     var bname = response[i].name;
                     var burl = response[i].website_url.trim();
                     if (response[i].website_url.length !== 0) {
@@ -83,7 +86,8 @@ $(document).ready(function () {
                     } else if (!bPhone) {
                         var barPhone = (" ");
                     }
-                    var barAddress = $("<p>").html(barStreet + "<br>" + barCity + ", " + barState + " " + barPostal.slice(0, 5)+ "<br>" + barPhone+"<br>"+"Bar Type: "+ barType).addClass("bar-address");
+                    var barAddress = $("<p>").html(barStreet + "<br>" + barCity + ", " + barState + " " + barPostal.slice(0, 5) + "<br>" + barPhone + "<br>" + "Bar Type: " + barType).addClass("bar-address");     
+                    $(divCard).append(barName, barAddress);
                     if (response[i].latitude)
                     {
                         barLat = response[i].latitude;
@@ -100,9 +104,7 @@ $(document).ready(function () {
                         $("#pubs").append(mymap);
                         initMap();
                     }
-                    $(divCard).append(barName, barAddress);
                     $("#pubs").append(divCard);
-
                 }
             }
         });
