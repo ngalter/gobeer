@@ -24,6 +24,12 @@ body {
   background-attachment: fixed;
   background-color:transparent;
 }
+.bg-img {
+    background-image: url("../img/beerbg.jpg"); 
+    color: brown;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 .container {
     text-align: center;
 }
