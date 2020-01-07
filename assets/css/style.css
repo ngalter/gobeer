@@ -36,11 +36,7 @@ body {
 .title-text {
     font-family: 'Sigmar One', cursive;
     text-align: center;
-<<<<<<< HEAD
-    text-shadow: 1px 1px 2px darkorange;
-=======
     text-shadow: 3px 2px 5px orangered;
->>>>>>> d077472c28c1bf6741c3186fcfc029899f921477
     font-size: 3em;
     padding-top: 10px;
 }
