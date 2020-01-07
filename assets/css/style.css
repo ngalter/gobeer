@@ -8,6 +8,9 @@
     #pubs {
         overflow: scroll;
     }
+    .myHeading {
+        padding-top: 200px;
+    }
   }
   
 
@@ -92,7 +95,9 @@ body {
     color: yellow;
     font-family: 'Sigmar One', cursive; 
 }
-
+.myHeading {
+    margin-top: 0px;
+}
 .my-btn:focus {
     background-color: orangered;
   }
