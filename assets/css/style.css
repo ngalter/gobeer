@@ -26,9 +26,11 @@
         }
         .title-text {
             font-size: 2.5em!important;
+            text-shadow: 3px 2px 5px orangered;
         }
         .sub-text {
             font-size: 1.5em!important;
+            text-shadow: 3px 2px 5px orangered;
         }
     }
   
@@ -53,6 +55,7 @@ body {
 
 .title-text {
     font-family: 'Sigmar One', cursive;
+    text-shadow: 3px 2px 5px orangered;
     text-align: center;
     font-size: 3em;
     padding-top: 10px;
