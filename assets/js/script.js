@@ -24,6 +24,25 @@ $(document).ready(function () {
         getByCity();
     });
 
+    //Get the button:
+mybutton = document.getElementById("topBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+    // When the user clicks on the button, scroll to the top of the document
+    $("#topBtn").on("click", function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    });
+
+    
     function formatPhone(str) {
         str = str.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3");
         return str;
@@ -46,6 +65,7 @@ $(document).ready(function () {
     }
     
     function getByCity() {
+        $("#pubs").show();
         var queryURL = "https://api.openbrewerydb.org/breweries?by_city=" + cityScore + "&sort=+name&per_page=50";     
         $.ajax({
             url: queryURL,
@@ -60,7 +80,7 @@ $(document).ready(function () {
                     barName = "";
                     bName = "";
                     nameLink = "";
-                    var divCard = $("<div>").attr("id", i.toString()).addClass("card");
+                    var divCard = $("<div>").attr("id", i.toString());
                     var bname = response[i].name;
                     var burl = response[i].website_url.trim();
                     if (response[i].website_url.length !== 0) {
@@ -100,7 +120,7 @@ $(document).ready(function () {
                         $("#pubs").append(mymap);
                         initMap();
                     }
-                    $(divCard).append(barName, barAddress);
+                    $(divCard).append(barName, barAddress).addClass("card");
                     $("#pubs").append(divCard);
 
                 }
