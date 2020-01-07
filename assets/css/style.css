@@ -3,6 +3,14 @@
     padding-bottom: 10px;
     background-color: transparent;
 }
+
+@media only screen and (max-width: 680px) {
+    #pubs {
+        overflow: scroll;
+    }
+  }
+  
+
 .my-map
 {
   border-top: solid 2px orange;
