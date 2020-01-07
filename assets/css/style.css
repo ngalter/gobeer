@@ -54,8 +54,8 @@ body {
 .title-text {
     font-family: 'Sigmar One', cursive;
     text-align: center;
-    text-shadow: 3px 2px 5px orangered;
-    font-size: 3.5em;
+    font-size: 3em;
+    padding-top: 10px;
 }
 .sub-text {
     text-align: center;
