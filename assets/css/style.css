@@ -115,7 +115,7 @@ body {
     text-align: center;
     background-color: yellow;
     color:orangered;
-    font-family: 'Sigmar One', cursive; 
+    font-family: 'Sigmar One', cursive;
 }
 .my-btn:hover {
     border-radius: 5px;
@@ -148,6 +148,8 @@ body {
     font-size: 1.2em;
     color:yellow;
     padding-top: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
     background-color: black;
     margin-bottom: 0px;
     margin-top: 0px;
